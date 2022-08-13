@@ -8,23 +8,12 @@
 
     .toolbarText{
         color:$primaryColor; 
-        font-size:1.3rem;
+        font-size:1.2rem;
         font-weight: bold;
     }
-   
-    .buttonItemsAlignment {
-        display: flex;
-        align-items: center;
-        background-color: $primaryColor;
+    .logoutButton{
+        background-color: $red;
         color:#fff;
-        font-weight: bold; 
-        font-size:1rem;
-        border: 0;
-        border-radius: 5px;
-    }
-    
-    .buttonItemsAlignment:hover{
-        cursor: pointer;
     }
 }
 

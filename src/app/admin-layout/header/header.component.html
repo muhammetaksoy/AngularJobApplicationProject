@@ -1,13 +1,22 @@
-<div>
-  <mat-toolbar class="toolBarItemsAlignment">
-    <span class="toolbarText">{{title}}</span>
-    <button mat-icon-button color="primary" class="buttonItemsAlignment">
-      <span>Profile</span>  
+<mat-toolbar class="toolBarItemsAlignment">
+  <span class="toolbarText">{{title}}</span>
+  <div class="buttonsContainer">
+    <button mat-raised-button mat-stroked-button color="accent" class="mx-2">
       <mat-icon>person</mat-icon>
+      <span class="mx-2">Profile</span>  
+    </button>
+    <button mat-stroked-button color="primary" class="mx-2">
+      <mat-icon>swap_horizontal_circle</mat-icon>
+      <span class="mx-2">Change Theme</span>  
+    </button>
+    <button mat-stroked-button color="warn" class="mx-2">
+      <mat-icon>logout</mat-icon>
+      <span class="mx-2">Logout</span>  
     </button>
 
- 
-  </mat-toolbar>
-</div>
+  </div>
+  
+</mat-toolbar>
+
 
 
