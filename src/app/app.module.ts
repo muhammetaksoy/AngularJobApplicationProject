@@ -25,6 +25,6 @@ import { SearchPipe } from './shared/pipes/search.pipe';
     BrowserAnimationsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
