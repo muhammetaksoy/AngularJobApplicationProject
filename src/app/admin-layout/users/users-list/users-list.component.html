@@ -1,0 +1,60 @@
+<h1 class="usersTitle alert">Users</h1>
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead >
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+            <th scope="col">Settings</th>
+          </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+        <td>
+          <button mat-icon-button [matMenuTriggerFor]="menu2">
+            <mat-icon>more_vert</mat-icon>
+          </button>
+          <mat-menu #menu2="matMenu">
+            <button mat-menu-item>
+              <mat-icon>update</mat-icon>
+              <span>update</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>delete_forever</mat-icon>
+              <span>delete</span>
+            </button>
+          </mat-menu>
+        </td>
+      </tr>
+          <tr>
+            <th>2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>
+              <button mat-icon-button [matMenuTriggerFor]="menu2">
+                <mat-icon>more_vert</mat-icon>
+              </button>
+              <mat-menu #menu2="matMenu">
+                <button mat-menu-item>
+                  <mat-icon>update</mat-icon>
+                  <span>update</span>
+                </button>
+                <button mat-menu-item>
+                  <mat-icon>delete_forever</mat-icon>
+                  <span>delete</span>
+                </button>
+              </mat-menu>
+            </td>
+          </tr>
+
+    </tbody>
+  </table>
+</div>
+
