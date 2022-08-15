@@ -1,27 +1,33 @@
-<h1 class="adsTitle alert">Advertisements</h1>
-<button mat-stroked-button color="accent" class="m-2" (click)="openDialogForCreate($event,'400ms', '400ms')">
+<h1 class="adsTitle alert m-0">Advertisements</h1>
+<button mat-stroked-button color="accent" class="my-2" (click)="openDialogForCreate($event,'400ms', '400ms')">
   <mat-icon>add</mat-icon>
-  <span class="mx-1">Create Ad</span>  
+  <span>Create Ad</span>
 </button>
 <div class="row row-cols-1 row-cols-md-3 g-4">
+
   <div class="col">
     <div class="card h-100">
       <div class="card-body">
         <div style="display: flex; justify-content:space-between;">
-          <h5 class="card-title" >Card title</h5>
-          <mat-icon matTooltip="View advertisement detail" color="accent" style="cursor: pointer;">remove_red_eye</mat-icon>
+          <h5 class="card-title">Card title</h5>
+          <mat-icon matTooltip="View advertisement detail" color="accent" style="cursor: pointer;">remove_red_eye
+          </mat-icon>
         </div>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <button mat-stroked-button color="primary" class="mx-2" (click)="openDialogForUpdate($event,'400ms', '400ms')">
-          <mat-icon>add</mat-icon>
-          <span class="mx-1">Update Ad</span>  
-        </button>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+          This content is a little bit longer.</p>
+        <div class="d-flex">
+          <button mat-stroked-button color="primary" class="p-1 mx-1"
+            (click)="openDialogForUpdate($event,'400ms', '400ms')">
+            <mat-icon>add</mat-icon>
+            <span class="p-0">Update Ad</span>
+          </button>
 
-        <button mat-stroked-button color="primary" class="mx-2" (click)="openDialogForRemove($event,'400ms', '400ms')">
-          <mat-icon>delete</mat-icon>
-          <span class="mx-1">Remove Ad</span>  
-        </button>
-
+          <button mat-stroked-button color="primary" class="p-1 mx-1"
+            (click)="openDialogForRemove($event,'400ms', '400ms')">
+            <mat-icon>delete</mat-icon>
+            <span class="p-0">Remove Ad</span>
+          </button>
+        </div>
       </div>
       <div class="card-footer">
         <small class="text-muted">Last updated 3 mins ago</small>
@@ -32,20 +38,25 @@
     <div class="card h-100">
       <div class="card-body">
         <div style="display: flex; justify-content:space-between;">
-          <h5 class="card-title" >Card title</h5>
-          <mat-icon matTooltip="View advertisement detail" color="accent" style="cursor: pointer;">remove_red_eye</mat-icon>
+          <h5 class="card-title">Card title</h5>
+          <mat-icon matTooltip="View advertisement detail" color="accent" style="cursor: pointer;">remove_red_eye
+          </mat-icon>
         </div>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <button mat-stroked-button color="primary" class="mx-2" (click)="openDialogForUpdate($event,'400ms', '400ms')">
-          <mat-icon>add</mat-icon>
-          <span class="mx-1">Update Ad</span>  
-        </button>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+          This content is a little bit longer.</p>
+        <div class="d-flex">
+          <button mat-stroked-button color="primary" class="p-1 mx-1"
+            (click)="openDialogForUpdate($event,'400ms', '400ms')">
+            <mat-icon>add</mat-icon>
+            <span class="p-0">Update Ad</span>
+          </button>
 
-        <button mat-stroked-button color="primary" class="mx-2">
-          <mat-icon>delete</mat-icon>
-          <span class="mx-1">Remove Ad</span>  
-        </button>
-
+          <button mat-stroked-button color="primary" class="p-1 mx-1"
+            (click)="openDialogForRemove($event,'400ms', '400ms')">
+            <mat-icon>delete</mat-icon>
+            <span class="p-0">Remove Ad</span>
+          </button>
+        </div>
       </div>
       <div class="card-footer">
         <small class="text-muted">Last updated 3 mins ago</small>
@@ -56,20 +67,25 @@
     <div class="card h-100">
       <div class="card-body">
         <div style="display: flex; justify-content:space-between;">
-          <h5 class="card-title" >Card title</h5>
-          <mat-icon matTooltip="View advertisement detail" color="accent" style="cursor: pointer;">remove_red_eye</mat-icon>
+          <h5 class="card-title">Card title</h5>
+          <mat-icon matTooltip="View advertisement detail" color="accent" style="cursor: pointer;">remove_red_eye
+          </mat-icon>
         </div>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <button mat-stroked-button color="primary" class="mx-2" (click)="openDialogForUpdate($event,'400ms', '400ms')">
-          <mat-icon>add</mat-icon>
-          <span class="mx-1">Update Ad</span>  
-        </button>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+          This content is a little bit longer.</p>
+        <div class="d-flex">
+          <button mat-stroked-button color="primary" class="p-1 mx-1"
+            (click)="openDialogForUpdate($event,'400ms', '400ms')">
+            <mat-icon>add</mat-icon>
+            <span class="p-0">Update Ad</span>
+          </button>
 
-        <button mat-stroked-button color="primary" class="mx-2">
-          <mat-icon>delete</mat-icon>
-          <span class="mx-1">Remove Ad</span>  
-        </button>
-
+          <button mat-stroked-button color="primary" class="p-1 mx-1"
+            (click)="openDialogForRemove($event,'400ms', '400ms')">
+            <mat-icon>delete</mat-icon>
+            <span class="p-0">Remove Ad</span>
+          </button>
+        </div>
       </div>
       <div class="card-footer">
         <small class="text-muted">Last updated 3 mins ago</small>
@@ -80,20 +96,25 @@
     <div class="card h-100">
       <div class="card-body">
         <div style="display: flex; justify-content:space-between;">
-          <h5 class="card-title" >Card title</h5>
-          <mat-icon matTooltip="View advertisement detail" color="accent" style="cursor: pointer;">remove_red_eye</mat-icon>
+          <h5 class="card-title">Card title</h5>
+          <mat-icon matTooltip="View advertisement detail" color="accent" style="cursor: pointer;">remove_red_eye
+          </mat-icon>
         </div>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <button mat-stroked-button color="primary" class="mx-2" (click)="openDialogForUpdate($event,'400ms', '400ms')">
-          <mat-icon>add</mat-icon>
-          <span class="mx-1">Update Ad</span>  
-        </button>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+          This content is a little bit longer.</p>
+        <div class="d-flex">
+          <button mat-stroked-button color="primary" class="p-1 mx-1"
+            (click)="openDialogForUpdate($event,'400ms', '400ms')">
+            <mat-icon>add</mat-icon>
+            <span class="p-0">Update Ad</span>
+          </button>
 
-        <button mat-stroked-button color="primary" class="mx-2" (click)="openDialogForRemove($event,'400ms', '400ms')">
-          <mat-icon>delete</mat-icon>
-          <span class="mx-1">Remove Ad</span>  
-        </button>
-
+          <button mat-stroked-button color="primary" class="p-1 mx-1"
+            (click)="openDialogForRemove($event,'400ms', '400ms')">
+            <mat-icon>delete</mat-icon>
+            <span class="p-0">Remove Ad</span>
+          </button>
+        </div>
       </div>
       <div class="card-footer">
         <small class="text-muted">Last updated 3 mins ago</small>
@@ -104,20 +125,25 @@
     <div class="card h-100">
       <div class="card-body">
         <div style="display: flex; justify-content:space-between;">
-          <h5 class="card-title" >Card title</h5>
-          <mat-icon matTooltip="View advertisement detail" color="accent" style="cursor: pointer;">remove_red_eye</mat-icon>
+          <h5 class="card-title">Card title</h5>
+          <mat-icon matTooltip="View advertisement detail" color="accent" style="cursor: pointer;">remove_red_eye
+          </mat-icon>
         </div>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <button mat-stroked-button color="primary" class="mx-2" (click)="openDialogForUpdate($event,'400ms', '400ms')">
-          <mat-icon>add</mat-icon>
-          <span class="mx-1">Update Ad</span>  
-        </button>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+          This content is a little bit longer.</p>
+        <div class="d-flex">
+          <button mat-stroked-button color="primary" class="p-1 mx-1"
+            (click)="openDialogForUpdate($event,'400ms', '400ms')">
+            <mat-icon>add</mat-icon>
+            <span class="p-0">Update Ad</span>
+          </button>
 
-        <button mat-stroked-button color="primary" class="mx-2">
-          <mat-icon>delete</mat-icon>
-          <span class="mx-1">Remove Ad</span>  
-        </button>
-
+          <button mat-stroked-button color="primary" class="p-1 mx-1"
+            (click)="openDialogForRemove($event,'400ms', '400ms')">
+            <mat-icon>delete</mat-icon>
+            <span class="p-0">Remove Ad</span>
+          </button>
+        </div>
       </div>
       <div class="card-footer">
         <small class="text-muted">Last updated 3 mins ago</small>
@@ -128,25 +154,30 @@
     <div class="card h-100">
       <div class="card-body">
         <div style="display: flex; justify-content:space-between;">
-          <h5 class="card-title" >Card title</h5>
-          <mat-icon matTooltip="View advertisement detail" color="accent" style="cursor: pointer;">remove_red_eye</mat-icon>
+          <h5 class="card-title">Card title</h5>
+          <mat-icon matTooltip="View advertisement detail" color="accent" style="cursor: pointer;">remove_red_eye
+          </mat-icon>
         </div>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <button mat-stroked-button color="primary" class="mx-2" (click)="openDialogForUpdate($event,'400ms', '400ms')">
-          <mat-icon>add</mat-icon>
-          <span class="mx-1">Update Ad</span>  
-        </button>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+          This content is a little bit longer.</p>
+        <div class="d-flex">
+          <button mat-stroked-button color="primary" class="p-1 mx-1"
+            (click)="openDialogForUpdate($event,'400ms', '400ms')">
+            <mat-icon>add</mat-icon>
+            <span class="p-0">Update Ad</span>
+          </button>
 
-        <button mat-stroked-button color="primary" class="mx-2">
-          <mat-icon>delete</mat-icon>
-          <span class="mx-1">Remove Ad</span>  
-        </button>
-
+          <button mat-stroked-button color="primary" class="p-1 mx-1"
+            (click)="openDialogForRemove($event,'400ms', '400ms')">
+            <mat-icon>delete</mat-icon>
+            <span class="p-0">Remove Ad</span>
+          </button>
+        </div>
       </div>
       <div class="card-footer">
         <small class="text-muted">Last updated 3 mins ago</small>
       </div>
     </div>
   </div>
-  
+
 </div>
