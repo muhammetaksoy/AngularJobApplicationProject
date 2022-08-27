@@ -9,6 +9,11 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatInputModule} from '@angular/material/input';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+
+
 
 
 
@@ -24,7 +29,11 @@ import {MatInputModule} from '@angular/material/input';
     MatTooltipModule,
     MatMenuModule,
     MatDialogModule,
-    MatInputModule
+    MatInputModule,
+    MatSnackBarModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    
   ]
 })
 export class AngularmaterialModule { }

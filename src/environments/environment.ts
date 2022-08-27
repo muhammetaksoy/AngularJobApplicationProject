@@ -6,7 +6,7 @@ export const environment = {
   production: false,
 
  //Declare api endpoints in this environment object
-  get_admin_infos:"",
+  ad:"http://localhost:48507/api/Ilan",
 
 
 };
