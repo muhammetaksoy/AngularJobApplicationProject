@@ -1,0 +1,101 @@
+<div class="container h-100">
+
+<div class="h-75">
+    <h1 class="text-center">UPDATE ADD</h1>
+    <div mat-dialog-content >
+        <form class="example-form" [formGroup]="addAdForm">
+            <mat-form-field class="w-100">
+              <mat-label>Title</mat-label>
+              <input formControlName="baslik" matInput>
+            </mat-form-field>
+
+            <mat-form-field class="w-100">
+              <mat-label>Description</mat-label>
+              <input formControlName="aciklama" matInput>
+            </mat-form-field>
+
+            <mat-form-field class="w-100">
+              <mat-label>end date</mat-label>
+              <input formControlName="bitisTarihi"  matInput [matDatepicker]="picker2">
+              <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+              <mat-datepicker touchUi #picker2></mat-datepicker>
+            </mat-form-field>
+
+            <mat-form-field class="w-100">
+              <mat-label>City</mat-label>
+              <input formControlName="sehir" matInput>
+            </mat-form-field>
+
+            <mat-form-field class="w-100">
+              <mat-label>Military Status</mat-label>
+              <input formControlName="askerlikDurumu" matInput>
+            </mat-form-field>
+
+            <mat-form-field class="w-100">
+              <mat-label>Education</mat-label>
+              <input formControlName="egitimSeviyesi" matInput>
+            </mat-form-field>
+
+            <mat-form-field class="w-100">
+              <mat-label>Ability</mat-label>
+              <input formControlName="nitelik1" matInput>
+            </mat-form-field>
+            <mat-form-field class="w-100">
+              <mat-label>Ability</mat-label>
+              <input formControlName="nitelik2" matInput>
+            </mat-form-field>
+            <mat-form-field class="w-100">
+              <mat-label>Ability</mat-label>
+              <input formControlName="nitelik3" matInput>
+            </mat-form-field>
+            <mat-form-field class="w-100">
+              <mat-label>Ability</mat-label>
+              <input formControlName="nitelik4" matInput>
+            </mat-form-field>
+            <mat-form-field class="w-100">
+              <mat-label>Ability</mat-label>
+              <input formControlName="nitelik5" matInput>
+            </mat-form-field>
+            <mat-form-field class="w-100">
+              <mat-label>Ability</mat-label>
+              <input formControlName="nitelik6" matInput>
+            </mat-form-field>
+            <mat-form-field class="w-100">
+              <mat-label>Ability</mat-label>
+              <input formControlName="nitelik7" matInput>
+            </mat-form-field>
+            <mat-form-field class="w-100">
+              <mat-label>Ability</mat-label>
+              <input formControlName="nitelik8" matInput>
+            </mat-form-field>
+            <mat-form-field class="w-100">
+              <mat-label>Ability</mat-label>
+              <input formControlName="nitelik9" matInput>
+            </mat-form-field>
+            <mat-form-field class="w-100">
+              <mat-label>Ability</mat-label>
+              <input formControlName="nitelik10" matInput>
+            </mat-form-field>
+
+            <mat-form-field class="w-100">
+              <mat-label>Department</mat-label>
+              <input formControlName="departmanId" matInput>
+            </mat-form-field>
+
+
+            
+        </form>
+    </div>
+</div>
+  
+
+    <div mat-dialog-actions class="h-25 d-flex justify-content-around">
+      <button mat-raised-button mat-dialog-close color="warn">Close</button>
+      <button mat-raised-button color="primary" (click)="addOrUpdateAd()" >Save</button>
+    </div>
+</div>
+
+
+
+
+

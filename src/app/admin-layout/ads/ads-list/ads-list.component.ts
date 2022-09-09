@@ -1,44 +1,54 @@
 import { Component, OnInit } from '@angular/core';
-import { DialogPosition, MatDialog } from '@angular/material/dialog';
-import { CreateAddFormComponent } from '../create-ads-form/create-ads-form.component';
+import { MatDialog } from '@angular/material/dialog';
+import {CreateOrUpdateFormComponent } from '../create-update-ads-form/create-update-ads-form.component';
+import { Ads } from '../models/ads.model';
 import { RemoveconfirmdialogComponent } from '../remove-confirm-dialog/removeconfirmdialog.component';
+import { AdService } from '../services/ad.service';
 @Component({
   selector: 'app-ads-list',
   templateUrl: './ads-list.component.html',
   styleUrls: ['./ads-list.component.scss']
 })
-export class AdsListComponent implements OnInit {
-
-  constructor(public dialog: MatDialog) { }
+export class AdsListComponent implements OnInit {  
+  ads:Ads[]=[];
+  constructor(public dialog: MatDialog,private adService:AdService) { }
 
   ngOnInit(): void {
+    this.getAds();
   }
 
-  openDialogForCreate(event:any,enterAnimationDuration: string, exitAnimationDuration: string): void {
-    const dialogRef = this.dialog.open(CreateAddFormComponent, {
-      width: '25%',
-      height:'100%',
-      position: { right: '0'},
-      enterAnimationDuration,
-      exitAnimationDuration,
-    });
+  getAds():void{
+    this.adService.getIlans().subscribe(response=>{
+      if(response && response.length>0){
+        this.ads=response;  
+      }
+    })
   }
 
-  openDialogForUpdate(event:any,enterAnimationDuration: string, exitAnimationDuration: string): void {
-    const dialogRef = this.dialog.open(CreateAddFormComponent, {
-      width: '25%',
-      height:'100%',
-      position: { right: '0'},
-      enterAnimationDuration,
-      exitAnimationDuration,
-    });
-  }
+  
 
-  openDialogForRemove(event:any,enterAnimationDuration: string, exitAnimationDuration: string): void {
-    const dialogRef = this.dialog.open(RemoveconfirmdialogComponent, {
+  openDialogForRemove(event:any,enterAnimationDuration: string, exitAnimationDuration: string,willRemoveItem:Ads): void {
+    let dialogRef = this.dialog.open(RemoveconfirmdialogComponent, {
       width: '300px',
       enterAnimationDuration,
       exitAnimationDuration,
+      data:willRemoveItem
     });
   }
+
+
+
+  openDialogForCreateAndUpdate(event:any,enterAnimationDuration: string, exitAnimationDuration: string,item?:Ads): void {
+    const dialogRef = this.dialog.open(CreateOrUpdateFormComponent, {
+      width: '25%',
+      height:'100%',
+      position: { right: '0'},
+      enterAnimationDuration,
+      exitAnimationDuration,
+      data:item
+    });
+  }
+
+
+
 }
