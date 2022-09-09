@@ -1,7 +1,10 @@
+@import "../../../shared/scss/colors";
+
+
 .usersTitle {
     text-align: center;
-    background-color: var(secondaryColor);
-    border: 1px solid var(secondaryColor);
+    background-color: $secondaryColor;
+    border: 1px solid $secondaryColor;
     color: #fff;
     padding: 0.7rem;
 

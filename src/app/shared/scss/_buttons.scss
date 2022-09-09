@@ -1,0 +1,30 @@
+@import '../../shared/scss/mixins';
+@import "../../shared/scss/colors";
+
+.button-primary {
+    @include standartButton($blue, $white);
+
+    &:hover {
+        background-color: $darkBlue;
+        transition: 0.5s;
+
+    }
+}
+
+.button-danger {
+    @include standartButton($orange, $white);
+
+    &:hover {
+        background-color: red;
+        transition: 0.5s;
+    }
+}
+
+.button-success {
+    @include standartButton($green, $white);
+
+    &:hover {
+        background-color: green;
+        transition: 0.5s;
+    }
+}

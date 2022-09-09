@@ -1,4 +1,4 @@
-@import "../../../shared/scss/variables";
+@import "../../../shared/scss/buttons";
 
 .adsTitle {
     text-align: center;
@@ -8,15 +8,18 @@
     padding: 0.7rem;
 
 }
-.card{
-    box-shadow:0px -2px 0px #549EF2;
+
+.card {
+    box-shadow: 0px -2px 0px #549EF2;
 }
-.card-body{
-    display: flex; 
-    flex-direction: column; 
-    justify-content:space-between;
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.buttons-container{
+
+.buttons-container {
     display: flex;
     justify-content: space-between;
 }

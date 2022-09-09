@@ -1,0 +1,9 @@
+@mixin standartButton($backgroundColor, $color) {
+    background-color: $backgroundColor;
+    color: $color;
+    font-size: 14px;
+    border: 0;
+    padding: 4px 8px;
+    border: 1px solid $backgroundColor;
+    border-radius: 5px;
+}
