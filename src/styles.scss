@@ -1,11 +1,15 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.css";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-*{
+@import "../src/app/shared/scss/variables";
+@import "../src/app/shared/scss/button";
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body{
-    background-color:#eeeeee;
+
+body {
+    background-color: #eeeeee;
 }

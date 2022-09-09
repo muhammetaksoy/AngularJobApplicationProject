@@ -1,0 +1,39 @@
+:root {
+    @mixin standartButton($backgroundColor, $color) {
+        background-color: $backgroundColor;
+        color: $color;
+        font-size: 14px;
+        border: 0;
+        padding: 4px 8px;
+        border: 1px solid $backgroundColor;
+        border-radius: 5px;
+    }
+
+    .button-primary {
+        @include standartButton(blue, white);
+
+        &:hover {
+            background-color: darkblue;
+            transition: 0.5s;
+        }
+    }
+
+    .button-danger {
+        @include standartButton(tomato, white);
+
+        &:hover {
+            background-color: red;
+            transition: 0.5s;
+        }
+    }
+
+    .button-success {
+        @include standartButton(green, white);
+
+        &:hover {
+            background-color: green;
+            transition: 0.5s;
+        }
+    }
+
+}

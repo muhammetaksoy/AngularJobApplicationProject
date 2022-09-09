@@ -1,10 +1,8 @@
-
-@import "../../../shared/scss/variables";
-.usersTitle{
+.usersTitle {
     text-align: center;
-    background-color: $secondaryColor;
-    border: 1px solid $secondaryColor;
-    color:#fff;
-    padding:0.7rem;
+    background-color: var(secondaryColor);
+    border: 1px solid var(secondaryColor);
+    color: #fff;
+    padding: 0.7rem;
 
 }

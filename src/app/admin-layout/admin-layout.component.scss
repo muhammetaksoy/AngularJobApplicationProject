@@ -1,11 +1,9 @@
-@import "../../app/shared/scss/variables";
-
-
-.active{
-    background-color: $secondaryColor;
-    border: 1px solid $secondaryColor;
+.active {
+    background-color: var(secondaryColor);
+    border: 1px solid var(secondaryColor);
 }
-.link{
-   color:#fff; 
-   text-decoration:none;
+
+.link {
+    color: #fff;
+    text-decoration: none;
 }

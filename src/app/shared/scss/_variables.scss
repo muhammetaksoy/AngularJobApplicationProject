@@ -1,14 +1,15 @@
 //Main colors
-$primaryColor:#007bfd;
-$secondaryColor:#0266d0;
+:root {
+    $primaryColor: #007bfd;
+    $secondaryColor: #0266d0;
 
-//Colors
-$blue:#007bff;
-$orange:#f57c00;
-$yellow:#ffa646;
-$purple:#982062;
-$green:#28a745;
-$pink:#ed2553;
-$red:#f44336;
-$grey:#848484;
-
+    //Colors
+    $blue: #007bff;
+    $orange: #f57c00;
+    $yellow: #ffa646;
+    $purple: #982062;
+    $green: #28a745;
+    $pink: #ed2553;
+    $red: #f44336;
+    $grey: #848484;
+}

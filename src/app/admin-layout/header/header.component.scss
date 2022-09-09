@@ -1,21 +1,16 @@
-@import "../../shared/scss/_variables.scss";
-
-
-.toolBarItemsAlignment{
-    display: flex; 
-    justify-content:space-around;
+.toolBarItemsAlignment {
+    display: flex;
+    justify-content: space-around;
     margin: 0 auto;
 
-    .toolbarText{
-        color:$primaryColor; 
-        font-size:1.2rem;
+    .toolbarText {
+        color: var(primaryColor);
+        font-size: 1.2rem;
         font-weight: bold;
     }
-    .logoutButton{
-        background-color: $red;
-        color:#fff;
+
+    .logoutButton {
+        background-color: var(red);
+        color: #fff;
     }
 }
-
-
-

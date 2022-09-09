@@ -6,11 +6,13 @@ import { HeaderComponent } from './header/header.component';
 import { UsersListComponent } from './users/users-list/users-list.component';
 
 const routes: Routes = [
-  {path:'',component:AdminLayoutComponent,
-    children:[
-      {path:'ads',component:AdsListComponent},
-      {path:'users',component:UsersListComponent}
-    ]  
+  {
+    path: '', component: AdminLayoutComponent,
+    children: [
+      { path: '', redirectTo: 'ads', pathMatch: 'full' },
+      { path: 'ads', component: AdsListComponent },
+      { path: 'users', component: UsersListComponent }
+    ]
   }
 ];
 
