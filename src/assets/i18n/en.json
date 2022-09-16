@@ -1,0 +1,12 @@
+{
+    "Header":{
+        "Title":"Angular Job Application Project Admin",
+        "Profile":"Profile",
+        "Theme":"Change Theme",
+        "Logout":"Logout"
+    },
+    "Language":{
+        "Turkish":"Turkish",
+        "English":"English"
+    }
+}

@@ -7,7 +7,7 @@ export const environment = {
 
  //Declare api endpoints in this environment object
   ad:"http://localhost:48507/api/Ilan",
-
+  user:"http://localhost:48507/api/Kullanici"
 
 };
 

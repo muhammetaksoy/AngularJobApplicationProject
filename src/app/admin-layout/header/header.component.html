@@ -1,18 +1,21 @@
 <mat-toolbar class="toolBarItemsAlignment">
-  <span class="toolbarText">{{title}}</span>
+  <span class="toolbarText">{{ 'Header.Title' | translate }}</span>
   <div class="buttonsContainer">
     <button mat-raised-button matTooltip="You will ppen the profile edit modal :)" color="accent" class="mx-2">
       <mat-icon>person</mat-icon>
-      <span class="mx-2">Profile</span>
+      <span class="mx-2">{{ 'Header.Profile' | translate }}</span>
     </button>
     <button mat-stroked-button color="primary" class="mx-2" matTooltip="You can change theme of the website :)">
       <mat-icon>swap_horizontal_circle</mat-icon>
-      <span class="mx-2">Change Theme</span>
+      <span class="mx-2">{{ 'Header.Theme' | translate }}</span>
     </button>
     <button mat-stroked-button color="warn" class="mx-2 " matTooltip="You will redirect to login page :)">
       <mat-icon>logout</mat-icon>
-      <span class="mx-2">Logout</span>
+      <span class="mx-2">{{ 'Header.Logout' | translate }}</span>
     </button>
+    <select (change)="onChangeLanguage($event)">
+      <option value="tr"> {{ 'Language.Turkish' | translate }} </option>
+      <option value="en"> {{ 'Language.English' | translate }} </option>
+    </select>
   </div>
-
 </mat-toolbar>

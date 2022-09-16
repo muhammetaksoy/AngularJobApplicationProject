@@ -1,6 +1,12 @@
 {
-    "Menu":{
-        "MainPage":"Anasayfa",
-        "Profile":"Profil"
+    "Header":{
+        "Title":"Angular İş Başvurusu Projesi Admin Sayfası",
+        "Profile":"Profil",
+        "Theme":"Temayı Değiştir",
+        "Logout":"Çıkış Yap"
+    },
+    "Language":{
+        "Turkish":"Türkçe",
+        "English":"İngilizce"
     }
 }

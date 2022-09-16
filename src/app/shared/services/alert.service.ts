@@ -28,5 +28,9 @@ export class AlertService {
     this.openAlert('alert-error',Message.Error);
   }
 
+  deleteMessage():void{
+    this.openAlert('alert-error',Message.Delete);
+  }
+
 
 }
