@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { Header } from './models/header.model';
 
 @Component({
@@ -7,12 +8,17 @@ import { Header } from './models/header.model';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  title:string="Angular Job Application Project Admin";
-  constructor() { 
+  selectedLanguage:any;
+  constructor(private translateService:TranslateService) { 
 
   }
 
   ngOnInit(): void {
+
   }
 
+  onChangeLanguage(event:any){
+    this.translateService.use(event.target.value);
+    localStorage.setItem("language",event.target.value);
+  }
 }

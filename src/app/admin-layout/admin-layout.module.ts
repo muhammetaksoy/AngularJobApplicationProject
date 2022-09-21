@@ -13,6 +13,9 @@ import { FooterComponent } from '../shared/components/footer/footer.component';
 import { AlertService } from '../shared/services/alert.service';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CreateOrUpdateFormComponent } from './ads/create-update-ads-form/create-update-ads-form.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { HttpClient } from '@angular/common/http';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 
 @NgModule({
@@ -30,8 +33,20 @@ import { CreateOrUpdateFormComponent } from './ads/create-update-ads-form/create
     CommonModule,
     AdminLayoutRoutingModule,
     AngularmaterialModule,
-    ReactiveFormsModule 
-  ],
+    ReactiveFormsModule,
+        // ngx-translate and the loader module
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient]
+            }
+        })
+      ],
   providers: [AlertService,DatePipe]
 })
 export class AdminLayoutModule { }
+// required for AOT compilation
+export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
+  return new TranslateHttpLoader(http,'./assets/i18n/','.json');
+}

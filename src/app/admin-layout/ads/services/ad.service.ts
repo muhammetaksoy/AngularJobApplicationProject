@@ -22,7 +22,9 @@ export class AdService {
   createAd(data:Object){
     return this.http.post<any>(environment.ad,data);
   }
+
   updateAd(data:Object,id:number){
     return this.http.put<any>(environment.ad +"/"+id,data);
   }
+  
 }

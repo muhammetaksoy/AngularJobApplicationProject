@@ -1,9 +1,14 @@
+@import "../shared/scss/colors";
+
 .active {
-    background-color: var(secondaryColor);
-    border: 1px solid var(secondaryColor);
+    background-color: $secondaryColor;
+    border: 1px solid  $secondaryColor;
+    & .link{
+        color: $white;
+    }
 }
 
 .link {
-    color: #fff;
+    color:black;
     text-decoration: none;
 }

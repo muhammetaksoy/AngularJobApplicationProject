@@ -1,7 +1,7 @@
 <div class="container h-100">
 
 <div class="h-75">
-    <h1 class="text-center">UPDATE ADD</h1>
+    <h1 class="text-center">{{isEdit ? "Update Ad" :"Create Ad"}}</h1>
     <div mat-dialog-content >
         <form class="example-form" [formGroup]="addAdForm">
             <mat-form-field class="w-100">

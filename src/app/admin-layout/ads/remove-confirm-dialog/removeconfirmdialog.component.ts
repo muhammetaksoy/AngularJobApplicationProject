@@ -22,7 +22,7 @@ export class RemoveconfirmdialogComponent{
 
   removeAd():void{
     this.adService.removeAd(this.data.ilanId).subscribe(res=>{
-      this.alertService.successMessage();
+      this.alertService.deleteMessage();
       this.dialogRef.close();
       this.adService.getIlans();
     });
