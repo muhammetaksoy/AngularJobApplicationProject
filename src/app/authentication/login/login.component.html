@@ -1,1 +1,25 @@
-<p>login works!</p>
+<main class="main">
+    <div class="container">
+        <section class="wrapper">
+            <div class="heading">
+                <h1 class="text text-large">Angular Application </h1>
+                <p class="text text-normal">New user? <span><a routerLink="/register" class="text text-links">Create an
+                            account</a></span>
+                </p>
+            </div>
+            <form name="signin" class="form">
+                <div class="input-control">
+                    <label for="email" class="input-label" hidden>Email Address</label>
+                    <input type="email" name="email" id="email" class="input-field" placeholder="Email Address">
+                </div>
+                <div class="input-control">
+                    <label for="password" class="input-label" hidden>Password</label>
+                    <input type="password" name="password" id="password" class="input-field" placeholder="Password">
+                </div>
+
+                <input type="button" name="submit" class="input-submit button-primary" value="Login">
+
+            </form>
+        </section>
+    </div>
+</main>

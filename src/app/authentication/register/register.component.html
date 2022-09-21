@@ -1,1 +1,35 @@
-<p>register works!</p>
+<main class="main">
+    <div class="container">
+        <section class="wrapper">
+            <div class="heading">
+                <h1 class="text text-large">Angular Application</h1>
+            </div>
+            <form name="signin" class="form">
+                <div class="input-control">
+                    <label for="Name" class="input-label" hidden>Name</label>
+                    <input type="Name" name="Name" id="Name" class="input-field" placeholder="Name">
+                </div>
+                <div class="input-control">
+                    <label for="Surname" class="input-label" hidden>Surname</label>
+                    <input type="Surname" name="Surname" id="Surname" class="input-field" placeholder="Surname">
+                </div>
+                <div class="input-control">
+                    <label for="email" class="input-label" hidden>Email Address</label>
+                    <input type="email" name="email" id="email" class="input-field" placeholder="Email Address">
+                </div>
+                <div class="input-control">
+                    <label for="password" class="input-label" hidden>Password</label>
+                    <input type="password" name="password" id="password" class="input-field" placeholder="Password">
+                </div>
+
+                <div class="d-flex justify-content-evenly">
+                    <input type="button" class="input-submit button-primary" value="Register">
+                    <input type="button" class="input-submit button-success" routerLink="/login"
+                        value="Back To login" />
+                </div>
+
+
+            </form>
+        </section>
+    </div>
+</main>
